@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Test CSS</title>
+    <link rel="stylesheet" href="../static/main.css" th:href="@{/main.css}">
+</head>
+<body>
+<ul>
+    <li><a class="active" href="#home">Home</a></li>
+    <li><a th:href="@{scroll}" href="scroll.html">Scroll</a></li>
+    <li><a th:href="@{web}" href="web.html">Web</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a th:href="@{treeboxes}" href="treeboxes.html" >link til Tree Boxes</a></li>
+</ul>
+<header>
+<nav>
+    <ul>
+        <li>
+            <a href="#"> Home </a>
+        </li>
+        <li>
+            <a href="#"> About </a>
+        </li>
+        <li>
+            <a href="#"> Contact </a>
+        </li>
+        <li> <a href="#"> Terms of use </a>
+        </li>
+        <li>
+            <a href="#"> Join Us </a>
+        </li>
+    </ul>
+</nav>
+</header>
+
+<div >
+    <h3 style="border:2px solid Tomato; height: 70px; width: 50%; padding-top: 35px; margin-left: 25%; text-align: center;">Hello World</h3>
+    <h3 style="border:2px solid DodgerBlue;">Hello World</h3>
+    <h3 style="border:2px solid Violet;">Hello World</h3>
+</div>
+
+<h1>The grid-auto-flow Property</h1>
+
+<p>The <em>grid-auto-flow</em> property controls how auto-placed items are inserted in the grid.</p>
+<p>This grid has three columns and two rows.</p>
+
+<h2>grid-auto-flow: column</h2>
+<p>Insert items column by column:</p>
+<div class="grid-container" style="grid-auto-flow: column;">
+    <div class="item1">Nedspildt spruttende af syre
+        og med alle tanker antændt fægtende
+        i delte mandariner
+        skilt og fuldmoden laprende
+        i grønt lys og flugt
+        med ligegyldige anslag
+        suget gennem minuttet
+        sydende af saft og nedspildt
+        fra hinkesten og mandariner
+        hoppende på blomsten
+        i kejtede kredse over
+        spejlblanke vandpytter ind
+        i et ansigt af røg og ingen
+        ild antændt spruttende
+        af mandariner men et ansigt
+        rygende af syre blink
+        og ætsende i nogens hornhinder.
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+    <div class="item2"><img src="../static/xrayflower.jpg" style="height: 300px; width: 300px"><br>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        This is a x-ray of a flower
+    </div>
+    <div class="item3" style="column-count: 3;">Hold fastere omkring mig <br>
+        Med dine runde Arme;<br>
+        Hold fast, imens dit Hjerte<br>
+        Endnu har Blod og Varme.<br>
+        Om lidt, saa er vi skilt ad,<br>
+        Som Bærrene paa Hækken;<br>
+        Om lidt, er vi forsvundne,<br>
+        Som Boblerne i Bækken.<br>
+        <br>
+        “Så tag mit hjerte” skrevet af Tove Ditlevsen<br>
+        <br>
+        Så tag mit hjerte i dine hænder,<br>
+        men tag det varsomt og tag det blidt,<br>
+        det røde hjerte – nu er det dit.<br>
+        Det slår så roligt, det slår så dæmpet,<br>
+        for det har elsket, og det har lidt,<br>
+        nu er det stille – nu er det dit.<br>
+        Og det kan såres, og det kan segne,<br>
+        og det kan glemme og glemme tit,<br>
+        men glemmer aldrig, at det er dit.<br>
+        Det var så stærkt og så stolt,<br>
+        mit hjerte, det sov og drømte i lyst og leg,<br>
+        nu kan det knuses – men kun af dig.<br>
+
+    </div>
+    <div class="item4">4</div>
+</div>
+
+<h2>grid-auto-flow: row</h2>
+<p>Insert items row by row:</p>
+<div class="grid-container" style="grid-auto-flow: row;">
+    <div class="item1">1</div>
+    <div class="item2">2</div>
+    <div class="item3">3</div>
+    <div class="item4">4</div>
+</div>
+
+
+
+</body>
+</html>
